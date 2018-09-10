@@ -20,7 +20,7 @@ Compiled binaries for OS X are available. Download from the releases page (link 
 + OS X binaries can be found [here](https://github.com/covarianttensor/Flips/releases/tag/1.0).
 ---
 ## How to Install (on Windows)
-Compiled binaries for Windows are available (portable). Download from the releases page (link below), then unzip and run the program from any folder.
+Compiled (portable) binaries for Windows are available. Download from the releases page (link below), then unzip and run the program from any folder.
 
 ### Windows Releases
 + Windows binaries can be found [here](https://github.com/covarianttensor/Flips/releases/tag/1.0).
