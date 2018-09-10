@@ -1,0 +1,43 @@
+name: qtfloatingips
+version: git
+summary: Qt Floating IPS is a patcher for IPS and BPS files. Uses Qt5 and QML for the interface and is powered by the Floating IPS library written by Alcaro on Github.
+description: |
+ Qt Floating IPS is a patcher for IPS and BPS files. Uses Qt5 and QML for the interface and is powered by the Floating IPS library written by Alcaro on Github.
+grade: stable
+confinement: strict
+
+parts:
+  desktop-icon:
+    source: .
+    plugin: nil
+    prepare: |
+      mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/applications
+      mkdir -p $SNAPCRAFT_PART_INSTALL/usr/share/pixmaps
+      cp -v dist/linux/QtFloatingIPS.desktop $SNAPCRAFT_PART_INSTALL/usr/share/applications/
+      cp -v dist/linux/QtFloatingIPS.png $SNAPCRAFT_PART_INSTALL/usr/share/pixmaps/
+      sed -i 's|Icon=QtFloatingIPS|Icon=/usr/share/pixmaps/QtFloatingIPS\.png|' $SNAPCRAFT_PART_INSTALL/usr/share/applications/QtFloatingIPS.desktop
+  qtfloatingips:
+    source: ./QtFloatingIPS
+    plugin: qmake
+    qt-version: qt5
+    after:
+      - desktop-icon
+      - desktop-qt5
+    build-packages:
+      - g++
+      - qt5-default
+      - qtdeclarative5-dev
+    stage-packages:
+      - libqt5declarative5
+    prime:
+      - -usr/share/doc
+
+apps:
+  qtfloatingips:
+    command: bin/desktop-launch $SNAP/usr/local/bin/QtFloatingIPS
+    desktop: usr/share/applications/QtFloatingIPS.desktop
+    plugs:
+      - home
+      - mount-observe
+      - opengl
+      - x11

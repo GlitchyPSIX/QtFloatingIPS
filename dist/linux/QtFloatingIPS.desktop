@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=QtFloatingIPS
+Comment=Qt Floating IPS is a patcher for IPS and BPS files.
+Icon=QtFloatingIPS
+Exec=QtFloatingIPS
+NoDisplay=false
+Categories=Utility;
+StartupNotify=false
+Terminal=false
