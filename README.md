@@ -13,7 +13,9 @@ Qt Floating IPS is a patcher for IPS and BPS files. Uses Qt5 and QML for the int
 Install Qt Floating IPS in seconds on [Ubuntu and other snap supported Linux 
 distributions](https://snapcraft.io/docs/core/install) with:
 
-    snap install qtfloatingips
+```
+# snap install qtfloatingips
+```
 
 ### Building From Source
 First clone the repository using `git`, if you don't have `git` installed
