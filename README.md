@@ -1,4 +1,6 @@
-# Qt Floating IPS
+Qt Floating IPS
+================
+[![Snap Status](https://build.snapcraft.io/badge/covarianttensor/QtFloatingIPS.svg)](https://build.snapcraft.io/user/covarianttensor/QtFloatingIPS)
 
 Qt Floating IPS is a patcher for IPS and BPS files. Uses Qt5 and QML for the interface and is powered by the Floating IPS library written by Alcaro on Github.
 
