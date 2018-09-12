@@ -19,7 +19,7 @@ parts:
   qtfloatingips:
     source: ./QtFloatingIPS
     plugin: qmake
-    qt-version: qt5.11
+    qt-version: qt5
     after:
       - desktop-icon
       - desktop-qt5
