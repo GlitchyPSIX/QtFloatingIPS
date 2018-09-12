@@ -10,7 +10,7 @@ Qt Floating IPS is a patcher for IPS and BPS files. Uses Qt5 and QML for the int
 Compiled binaries for OS X are available. Download from the releases page (link below), then unzip and just drag and drop into your Applications folder.
 
 ### OS X Releases
-+ OS X binaries can be found [here](https://github.com/covarianttensor/Flips/releases/tag/1.0).
++ OS X binaries can be found [here](https://github.com/covarianttensor/QtFloatingIPS/releases).
 ---
 
 ### Building From Source
